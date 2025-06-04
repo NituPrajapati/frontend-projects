@@ -2,7 +2,7 @@ import React from 'react'
 
 const Banner2 = () => {
   return (
-    <div className=''>
+    <div>
     <div>
     <p className='text-center text-4xl mt-80 px-10'>
       The conversion rate of the typeform is at 10.6%. For the pace at <br></br>which I executed this, it beats any smart landing page you could make.

@@ -13,7 +13,7 @@ const Navbar = () => {
   },[])
   return (
     <>
-    <div className='sticky top-0'>
+    <div className='sticky top-0 z-40'>
       <div className="navbar bg-base-100">
         <div className="flex">
           <img className="h-10 w-10 m-5 ml-10" src="/download.jpg" />

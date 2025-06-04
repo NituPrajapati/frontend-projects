@@ -1,14 +1,21 @@
-import React from 'react'
-
+import gsap from "gsap"
+import {useGSAP} from '@gsap/react'
 function Banner4() {
+  useGSAP(()=>{
+    gsap.to(".img1, .img2, .img3",{
+       y:40,
+       ease: "bounce",
+       duration:5,
+    })
+  })
   return (
      <>
-     <div>
+     <div className='bg-[#FAF9FB]'>
         {/* 1st container */}
      <div className='flex m-10'>
         <div className='w-1/2 h-full m-20'>
             <div className='w-[90%] h-84 content-center'>
-                <img src="/img.webp"/>
+                <img className="img1" src="/img.webp"/>
             </div>
         </div>
         <div className='w-1/2 h-full'>
@@ -30,7 +37,7 @@ function Banner4() {
       </div>
         <div className='w-1/2 h-full m-25'>
             <div className='w-[90%] h-84 content-center'>
-                <img src="/img2.webp"/>
+                <img className="img2 " src="/img2.webp"/>
             </div>
         </div>
      </div>
@@ -38,7 +45,7 @@ function Banner4() {
     <div className='flex mt-45'>
         <div className='w-1/2 h-full m-20'>
             <div className='w-[90%] h-84 content-center'>
-                <img src="/img3.webp"/>
+                <img className="img3" src="/img3.webp"/>
             </div>
         </div>
         <div className='w-1/2 h-full'>
