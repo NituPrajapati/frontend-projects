@@ -1,13 +1,13 @@
 import gsap from "gsap"
 import {useGSAP} from '@gsap/react'
 function Banner4() {
-  useGSAP(()=>{
+    useGSAP(()=>{
     gsap.to(".img1, .img2, .img3",{
-       y:40,
-       ease: "bounce",
-       duration:5,
+    y:40,
+    ease: "bounce",
+    duration:5,
     })
-  })
+})
   return (
      <>
      <div className='bg-[#FAF9FB]'>

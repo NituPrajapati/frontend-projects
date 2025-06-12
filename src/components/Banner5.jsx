@@ -1,5 +1,5 @@
 import { IoMdCheckmark } from "react-icons/io";
-
+import Cards from "./Cards";
 function Banner5() {
   return (
     <>
@@ -11,70 +11,57 @@ function Banner5() {
             </div>
         </div>
         
-       
-        <div class="flex m-15 gap-6">
-           {/* //1st container  */}
-          <div class="w-1/3 h-9/10 bg-white text-center rounded-2xl border-0 p-2">
-             <h3 className='text-2xl font-semibold mt-5'>Basic</h3>
-             <p className="mt-2 text-[#655D65]">Create interactive forms that connect to your workflow</p>
-              <div className='m-15'> <span className='text-3xl'>25USD</span>/mo <br></br> <div className="text-[#457D4E]">Save58US/yr</div></div>
-                <div><a className="btn btn-ghost w-40 h-13 rounded-xl bg-[#3E3040] text-[#FAF9FB] p-3 cursor-pointer">Get Basic</a></div>
-                <div className="mt-8">
-                <hr className="border-t-1 border-gray-300"></hr>
-                  <div className="flex-col space-y-1">
-                    <p className="justify-items-start flex"><IoMdCheckmark size={21}/>100 responses/mo included </p><br></br>
-                    <hr className="border-t-1 border-gray-300"></hr>
-                    <p className="justify-items-start flex"><IoMdCheckmark size={21}/>1 User </p> <br></br>
-                    <hr className="border-t-1 border-gray-300"></hr>
-                    <p className="justify-items-start flex"><IoMdCheckmark size={21}/>Unlimited typeforms </p><br></br>
-                    <hr className="border-t-1 border-gray-300"></hr>
-                    <p className="justify-items-start flex"><IoMdCheckmark size={21}/>Unlimited Questions </p><br></br>
-                  </div>
-                </div>
-          </div>
+        <div class="flex m-14">
+          {/* //1st container  */}
+            <Cards
+            cardType="Basic"
+            description="Create interactive forms that connect to your workflow"
+            price="25USD"
+            savings="Save 58USD/yr"
+            getbutton="Get Basic"
+            features={[
+              "100 responses/mo included",
+              "1 User ",
+              "Unlimited typeforms",
+              "Unlimited Questions",
+            ]}
+          />
              {/* //2nd container  */}     
-          <div class="w-1/3 h-9/10 bg-white text-center rounded-2xl border-0 p-2">
-            <h3 className='text-2xl font-semibold mt-5'>Basic</h3>
-             <p className="mt-2 text-[#655D65]">Create interactive forms that connect to your workflow</p>
-              <div className='m-15'> <span className='text-3xl'>25USD</span>/mo <br></br> <div className="text-[#457D4E]">Save58US/yr</div></div>
-                <div><a className="btn btn-ghost w-40 h-13 rounded-xl bg-[#3E3040] text-[#FAF9FB] p-3 cursor-pointer">Get Basic</a></div>
-                <div className="mt-8">
-                <hr className="border-t-1 border-gray-300"></hr>
-                  <div className="flex-col space-y-1">
-                    <p className="justify-items-start flex"><IoMdCheckmark size={21}/>100 responses/mo included </p><br></br>
-                    <hr className="border-t-1 border-gray-300"></hr>
-                    <p className="justify-items-start flex"><IoMdCheckmark size={21}/>1 User </p> <br></br>
-                    <hr className="border-t-1 border-gray-300"></hr>
-                    <p className="justify-items-start flex"><IoMdCheckmark size={21}/>Unlimited typeforms </p><br></br>
-                    <hr className="border-t-1 border-gray-300"></hr>
-                    <p className="justify-items-start flex"><IoMdCheckmark size={21}/>Unlimited Questions </p><br></br>
-                  </div>
-                </div>
-          </div>
+           <Cards
+            cardType="Plus"
+            description="Make your forms more beautiful and on-brand"
+            price="50 USD"
+            savings="Save 118USD/yr"
+            getbutton="Get plus"
+            features={[
+              "1,000 responses/mo included",
+              "3 User ",
+              "Everything in Basic",
+              "Remove Typeform branding",
+              "Custom subdomain",
+            ]}
+          />
            {/* //3rd container  */}
-          <div class="w-1/3 h-9/10 bg-white text-center rounded-2xl border-0 p-2">
-          <h3 className='text-2xl font-semibold mt-5'>Basic</h3>
-             <p className="mt-2 text-[#655D65]">Create interactive forms that connect to your workflow</p>
-              <div className='m-15'> <span className='text-3xl'>25USD</span>/mo <br></br> <div className="text-[#457D4E]">Save58US/yr</div></div>
-                <div><a className="btn btn-ghost w-40 h-13 rounded-xl bg-[#3E3040] text-[#FAF9FB] p-3 cursor-pointer">Get Basic</a></div>
-                <div className="mt-8">
-                <hr className="border-t-1 border-gray-300"></hr>
-                  <div className="flex-col space-y-1">
-                    <p className="justify-items-start flex"><IoMdCheckmark size={21}/>100 responses/mo included </p><br></br>
-                    <hr className="border-t-1 border-gray-300"></hr>
-                    <p className="justify-items-start flex"><IoMdCheckmark size={21}/>1 User </p> <br></br>
-                    <hr className="border-t-1 border-gray-300"></hr>
-                    <p className="justify-items-start flex"><IoMdCheckmark size={21}/>Unlimited typeforms </p><br></br>
-                    <hr className="border-t-1 border-gray-300"></hr>
-                    <p className="justify-items-start flex"><IoMdCheckmark size={21}/>Unlimited Questions </p><br></br>
-                  </div>
-                </div>
-          </div>
+          <Cards
+            cardType="Business"
+            description="Analyze performance and do more with your data"
+            price="83 USD"
+            savings="Save 198USD/yr"
+            getbutton="Get Business"
+            features={[
+              "10,000 responses/mo included",
+              "5 User ",
+              "Everything in Plus",
+              "Drop-off rates",
+              "Conversion tracking",
+              "Priority support and live chat",
+            ]}
+          />
 
         </div>
         <div className="mt-25 mb-20"><p className="text-center underline">
           Or try it out with our free plan </p></div>
-           <br></br><br></br>
+          <br></br><br></br>
     </div>
 
     <div className="bg-[#FFFFFF] text-center m-20 mb-40">
